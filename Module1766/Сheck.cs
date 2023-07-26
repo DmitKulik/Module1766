@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Module1766
 {
-    
-    public class SalaryAccount : ICheckInterest
+    internal class Сheck
     {
-        public void Interest(Account account)
+        public Сheck(Account account, ICalculatorInterest calculator)
         {
-            account.Interest = account.Balance * 0.5;
+            calculator.Interest(account);
+
         }
     }
 }

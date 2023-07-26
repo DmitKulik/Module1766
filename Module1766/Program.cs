@@ -10,6 +10,9 @@ namespace Module1766
     {
         static void Main(string[] args)
         {
+            var account = new Account { Type = "Обычный", Balance = 100000, Interest = 2 };
+            var ordinary = new Check(account, new OrdinaryAccount());
+            var salary = new Check(account, new SalaryAccount());
         }
     }
 }

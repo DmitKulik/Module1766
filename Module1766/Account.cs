@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace Module1766
 {
-    public interface ICalculate
-    {
-        void CalculateInterest(Account account);
-    }
     public class Account
     {
         // тип учетной записи
